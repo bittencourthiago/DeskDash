@@ -17,5 +17,27 @@ enum TerminalCommands: String {
     case light = "open https://www.ledr.com/colours/white.htm"
     case mail = "open -a Mail"
     case notes = "open -a Notes"
+ 
+    
+    func getImageName() -> String {
+        switch self {
+            case .xcode:
+                return "hammer.fill"
+            case .brave:
+                return "globe"
+            case .discord:
+                return "message.fill"
+            case .terminal:
+                return "terminal"
+            case .copy:
+                return ""
+            case .light:
+                return "lightbulb.fill"
+            case .mail:
+                return "envelope.fill"
+            case .notes:
+                return "note.text"
+        }
+    }
     
 }

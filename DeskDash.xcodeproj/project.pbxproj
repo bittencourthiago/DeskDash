@@ -19,6 +19,9 @@
 		859431142806722C003C3920 /* ColorSender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 859431132806722C003C3920 /* ColorSender.swift */; };
 		859431162806724E003C3920 /* CommandSender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 859431152806724E003C3920 /* CommandSender.swift */; };
 		8594311828067574003C3920 /* SystemUsage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8594311728067574003C3920 /* SystemUsage.swift */; };
+		8594311C28067FFB003C3920 /* UsageRectangleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8594311B28067FFB003C3920 /* UsageRectangleView.swift */; };
+		8594312028068172003C3920 /* UsageRectangleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8594311F28068172003C3920 /* UsageRectangleViewModel.swift */; };
+		8594312228068332003C3920 /* PercentType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8594312128068332003C3920 /* PercentType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +38,9 @@
 		859431132806722C003C3920 /* ColorSender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorSender.swift; sourceTree = "<group>"; };
 		859431152806724E003C3920 /* CommandSender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandSender.swift; sourceTree = "<group>"; };
 		8594311728067574003C3920 /* SystemUsage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemUsage.swift; sourceTree = "<group>"; };
+		8594311B28067FFB003C3920 /* UsageRectangleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsageRectangleView.swift; sourceTree = "<group>"; };
+		8594311F28068172003C3920 /* UsageRectangleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsageRectangleViewModel.swift; sourceTree = "<group>"; };
+		8594312128068332003C3920 /* PercentType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PercentType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,8 +113,8 @@
 		8594310428065B5B003C3920 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				8594310528065C08003C3920 /* SmallRectangleView.swift */,
-				8594310728065C21003C3920 /* SmallRectangleViewModel.swift */,
+				8594311A28067FD2003C3920 /* UsageRectangle */,
+				85943119280678DB003C3920 /* SmallRectangle */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -120,8 +126,27 @@
 				859431132806722C003C3920 /* ColorSender.swift */,
 				859431152806724E003C3920 /* CommandSender.swift */,
 				8594311728067574003C3920 /* SystemUsage.swift */,
+				8594312128068332003C3920 /* PercentType.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		85943119280678DB003C3920 /* SmallRectangle */ = {
+			isa = PBXGroup;
+			children = (
+				8594310528065C08003C3920 /* SmallRectangleView.swift */,
+				8594310728065C21003C3920 /* SmallRectangleViewModel.swift */,
+			);
+			path = SmallRectangle;
+			sourceTree = "<group>";
+		};
+		8594311A28067FD2003C3920 /* UsageRectangle */ = {
+			isa = PBXGroup;
+			children = (
+				8594311B28067FFB003C3920 /* UsageRectangleView.swift */,
+				8594311F28068172003C3920 /* UsageRectangleViewModel.swift */,
+			);
+			path = UsageRectangle;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -201,9 +226,12 @@
 			files = (
 				8594311828067574003C3920 /* SystemUsage.swift in Sources */,
 				8594310D280663A4003C3920 /* ErrorHttp.swift in Sources */,
+				8594312028068172003C3920 /* UsageRectangleViewModel.swift in Sources */,
+				8594312228068332003C3920 /* PercentType.swift in Sources */,
 				859430F6280659BF003C3920 /* ContentView.swift in Sources */,
 				8594311228066F90003C3920 /* TerminalCommands.swift in Sources */,
 				8594310628065C08003C3920 /* SmallRectangleView.swift in Sources */,
+				8594311C28067FFB003C3920 /* UsageRectangleView.swift in Sources */,
 				859431142806722C003C3920 /* ColorSender.swift in Sources */,
 				859431162806724E003C3920 /* CommandSender.swift in Sources */,
 				8594310828065C21003C3920 /* SmallRectangleViewModel.swift in Sources */,

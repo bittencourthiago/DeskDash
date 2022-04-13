@@ -43,6 +43,12 @@ struct Service {
         }
     }
     
+    func startUpdateUsage(completion: @escaping((Result<SystemUsage, AFError>)->Void)) {
+        let _ =  Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { (timer) in
+            getUsage(completion: completion)
+        }
+    }
+    
     func getUsage(completion: @escaping((Result<SystemUsage, AFError>)->Void)) {
         AF.request("\(urlBase):3030/usage").responseDecodable(of: SystemUsage.self) { response in
             completion(response.result)
