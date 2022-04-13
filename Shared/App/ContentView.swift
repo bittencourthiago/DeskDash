@@ -2,14 +2,14 @@
 //  ContentView.swift
 //  Shared
 //
-//  Created by PremierSoft on 12/04/22.
+//  Created by Thiago on 12/04/22.
 //
 
 import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
+        SmallRectangleView()
             .padding()
     }
 }

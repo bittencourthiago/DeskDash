@@ -2,7 +2,7 @@
 //  DeskDashApp.swift
 //  Shared
 //
-//  Created by PremierSoft on 12/04/22.
+//  Created by Thiago on 12/04/22.
 //
 
 import SwiftUI
