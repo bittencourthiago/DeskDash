@@ -17,9 +17,14 @@ struct SmallRectangleView: View {
             viewModel.sendCommand(command: type)
         }, label: {
             Group {
-                Image(systemName: type.getImageName())
-                    .foregroundColor(.white)
-                    .font(.system(size: 30))
+				switch type {
+					case .brave, .discord:
+						Image(type.getImageName())
+					default:
+						Image(systemName: type.getImageName())
+							.foregroundColor(.white)
+							.font(.system(size: 30))
+				}
             }
             .frame(width: 80, height: 80, alignment: .center)
             .background(.black.opacity(0.8))

@@ -15,7 +15,6 @@
 		857C90F4280709460009D538 /* WeatherRectangleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 857C90F3280709460009D538 /* WeatherRectangleView.swift */; };
 		857C90F6280713DA0009D538 /* Double+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 857C90F5280713DA0009D538 /* Double+Extension.swift */; };
 		857C90F828084C680009D538 /* WeatherIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 857C90F728084C680009D538 /* WeatherIcon.swift */; };
-		857C90FA280855030009D538 /* Keys.plist in Resources */ = {isa = PBXBuildFile; fileRef = 857C90F9280855030009D538 /* Keys.plist */; };
 		857C90FC280856190009D538 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 857C90FB280856190009D538 /* Constants.swift */; };
 		857C910028087DE20009D538 /* BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 857C90FF28087DE20009D538 /* BackgroundView.swift */; };
 		859430F4280659BF003C3920 /* DeskDashApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 859430E4280659BE003C3920 /* DeskDashApp.swift */; };
@@ -44,7 +43,6 @@
 		857C90F3280709460009D538 /* WeatherRectangleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherRectangleView.swift; sourceTree = "<group>"; };
 		857C90F5280713DA0009D538 /* Double+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Extension.swift"; sourceTree = "<group>"; };
 		857C90F728084C680009D538 /* WeatherIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherIcon.swift; sourceTree = "<group>"; };
-		857C90F9280855030009D538 /* Keys.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Keys.plist; sourceTree = "<group>"; };
 		857C90FB280856190009D538 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		857C90FF28087DE20009D538 /* BackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundView.swift; sourceTree = "<group>"; };
 		859430E4280659BE003C3920 /* DeskDashApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeskDashApp.swift; sourceTree = "<group>"; };
@@ -123,7 +121,6 @@
 				859431232806F8CB003C3920 /* Extensions */,
 				857C90E92806FF960009D538 /* Utils */,
 				859430E6280659BF003C3920 /* Assets.xcassets */,
-				857C90F9280855030009D538 /* Keys.plist */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -279,7 +276,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				857C90FA280855030009D538 /* Keys.plist in Resources */,
 				859430F8280659BF003C3920 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
