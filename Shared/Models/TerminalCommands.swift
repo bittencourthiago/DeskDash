@@ -8,7 +8,7 @@
 import Foundation
 
 enum TerminalCommands: String {
-    
+
     case xcode = "open -a Xcode.app"
     case brave = "open -a Brave\\ Browser.app"
     case discord = "open -a Discord.app"
@@ -17,8 +17,6 @@ enum TerminalCommands: String {
     case light = "open https://www.ledr.com/colours/white.htm"
     case mail = "open -a Mail"
     case notes = "open -a Notes"
- 
-    
     func getImageName() -> String {
         switch self {
             case .xcode:
@@ -39,5 +37,5 @@ enum TerminalCommands: String {
                 return "note.text"
         }
     }
-    
+
 }

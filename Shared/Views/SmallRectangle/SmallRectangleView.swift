@@ -8,10 +8,10 @@
 import SwiftUI
 
 struct SmallRectangleView: View {
-    
+
     @ObservedObject var viewModel = SmallRectangleViewModel()
     let type: TerminalCommands
-    
+
     var body: some View {
         Button(action: {
             viewModel.sendCommand(command: type)
@@ -26,9 +26,6 @@ struct SmallRectangleView: View {
             .cornerRadius(17)
         })
     }
-    
-    
-    
 }
 
 struct SmallRectangleView_Previews: PreviewProvider {

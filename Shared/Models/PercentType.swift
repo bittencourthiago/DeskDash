@@ -10,7 +10,7 @@ import Foundation
 enum PercentType {
     case cpu
     case memory
-    
+
     func getName() -> String {
         switch self {
             case .cpu:

@@ -19,7 +19,6 @@ struct WeatherItem: Codable {
 
 typealias Weather = [WeatherItem]
 
-
 struct Wind: Codable {
     let speed: Double
     let deg: Int

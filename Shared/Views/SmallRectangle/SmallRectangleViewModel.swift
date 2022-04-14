@@ -8,29 +8,17 @@
 import Foundation
 
 class SmallRectangleViewModel: ObservableObject {
-    
+
     let service = MainService()
-    
-    func sendCommand(command: TerminalCommands) {
+
+	func sendCommand(command: TerminalCommands) {
         service.sendCommand(command: command) { result in
             switch result {
-                case .success(_):
+                case .success:
                     print("success")
-                case .failure(_):
+                case .failure:
                     print("failure")
             }
         }
-        
-        
-//        service.copyText(text: "adsdasd") { result in
-//            switch result {
-//                case .success(_):
-//                    print("success")
-//                case .failure(_):
-//                    print("failure")
-//            }
-//        }
-//
-    
     }
 }

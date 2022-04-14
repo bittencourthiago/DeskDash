@@ -8,15 +8,15 @@
 import SwiftUI
 
 struct UsageRectangleView: View {
-    
+
     @State var percent = "100.22"
-    
+
     let type: PercentType
     var viewModel = UsageRectangleViewModel()
-    
+
     var body: some View {
         Button(action: {
-            
+
         }, label: {
             ZStack {
                 Color.black.opacity(0.8)

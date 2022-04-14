@@ -9,11 +9,11 @@ import Foundation
 import MapKit
 
 struct CurrentLocationManager {
-    
+
     let locManager = CLLocationManager()
-    
+
     lazy var latitude: String = {
-        
+
         switch locManager.authorizationStatus {
         case .restricted, .denied:
             return ""
@@ -21,11 +21,11 @@ struct CurrentLocationManager {
             let currentLocation = self.locManager.location?.coordinate.latitude.description ?? ""
             return String(describing: currentLocation)
         }
-        
+
     }()
-    
+
     lazy var longitude: String = {
-        
+
         switch locManager.authorizationStatus {
         case .restricted, .denied:
             return ""
@@ -33,12 +33,12 @@ struct CurrentLocationManager {
             let currentLocation = self.locManager.location?.coordinate.longitude.description ?? ""
             return String(describing: currentLocation)
         }
-        
+
     }()
-    
+
     func requestAuthorization() {
-        
+
         locManager.requestWhenInUseAuthorization()
     }
-    
+
 }

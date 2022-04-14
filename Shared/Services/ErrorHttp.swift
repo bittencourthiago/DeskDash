@@ -10,7 +10,7 @@ import Foundation
 struct ErrorHttp: Codable, Error {
     var statusCode: Int
     var message: String
-    
+
     enum CodingKeys: String, CodingKey {
         case statusCode
         case message

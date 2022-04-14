@@ -8,7 +8,7 @@
 import Foundation
 
 struct WeatherIconManager {
-    func getIconNameFromCode(code: String) -> String {
+    func getIconNameFrom(code: String) -> String {
         switch code {
             case "01d":
                 return "sun.max.fill"
