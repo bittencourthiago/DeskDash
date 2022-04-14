@@ -6,10 +6,11 @@
 //
 
 import Foundation
+import SwiftUI
 
 struct UsageRectangleViewModel {
     
-    let service = Service()
+    let service = MainService()
     
     func getUsage(completion: @escaping((SystemUsage)->Void)) {
         service.startUpdateUsage { result in
@@ -20,5 +21,9 @@ struct UsageRectangleViewModel {
                     print("failure")
             }
         }
+    }
+    
+    func getPercentOfHeight(value: Float) -> CGFloat {
+        return CGFloat(value * 175 / 100)
     }
 }

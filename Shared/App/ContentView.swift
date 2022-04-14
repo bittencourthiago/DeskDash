@@ -17,7 +17,7 @@ struct ContentView: View {
                 SmallRectangleView(type: .terminal)
             }
             VStack {
-                UsageRectangleView(type: .cpu)
+                WeatherRectangleView()
                 UsageRectangleView(type: .memory)
             }
             VStack {

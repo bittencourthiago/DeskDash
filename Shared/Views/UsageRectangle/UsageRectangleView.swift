@@ -18,17 +18,25 @@ struct UsageRectangleView: View {
         Button(action: {
             
         }, label: {
-            VStack {
-                Text("\(percent)")
-                    .foregroundColor(.white)
-                    .font(.system(size: 40, weight: .black))
-                Text("\(type.getName()) Usage (%)")
-                    .foregroundColor(.white)
-                        .font(.system(size: 13, weight: .black))
+            ZStack {
+                Color.black.opacity(0.8)
+                VStack {
+                    Spacer()
+                    Color.blue
+                        .frame(height: viewModel.getPercentOfHeight(value: percent.floatValue))
+                        .animation(.easeIn(duration: 0.4), value: percent)
                 }
-                .frame(width: 170, height: 170, alignment: .center)
-                .background(.black.opacity(0.8))
-                .cornerRadius(13)
+                VStack {
+                    Text("\(percent)")
+                        .foregroundColor(.white)
+                        .font(.system(size: 40, weight: .black))
+                    Text("\(type.getName()) Usage (%)")
+                        .foregroundColor(.white)
+                            .font(.system(size: 13, weight: .black))
+                }
+            }
+            .frame(width: 170, height: 170, alignment: .center)
+            .cornerRadius(17)
             })
             .onAppear {
                 viewModel.getUsage { usage in

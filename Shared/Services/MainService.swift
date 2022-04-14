@@ -8,7 +8,7 @@
 import Foundation
 import Alamofire
 
-struct Service {
+struct MainService {
     let urlBase = "http://192.168.178.200"
     
     func sendCommand(command: TerminalCommands, completion: @escaping((Result<Any, AFError>)->Void)) {

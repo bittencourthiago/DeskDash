@@ -9,10 +9,10 @@ import Foundation
 
 class SmallRectangleViewModel: ObservableObject {
     
-    let service = Service()
+    let service = MainService()
     
-    func sendCommand() {
-        service.sendCommand(command: .notes) { result in
+    func sendCommand(command: TerminalCommands) {
+        service.sendCommand(command: command) { result in
             switch result {
                 case .success(_):
                     print("success")
@@ -22,24 +22,15 @@ class SmallRectangleViewModel: ObservableObject {
         }
         
         
-        service.copyText(text: "adsdasd") { result in
-            switch result {
-                case .success(_):
-                    print("success")
-                case .failure(_):
-                    print("failure")
-            }
-        }
-        
-        service.getUsage { result in
-            switch result {
-                case .success(let usage):
-                    print(usage)
-                case .failure(_):
-                    print("failure")
-            }
-        }
-        
+//        service.copyText(text: "adsdasd") { result in
+//            switch result {
+//                case .success(_):
+//                    print("success")
+//                case .failure(_):
+//                    print("failure")
+//            }
+//        }
+//
     
     }
 }

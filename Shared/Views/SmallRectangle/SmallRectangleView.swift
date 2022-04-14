@@ -14,7 +14,7 @@ struct SmallRectangleView: View {
     
     var body: some View {
         Button(action: {
-            viewModel.sendCommand()
+            viewModel.sendCommand(command: type)
         }, label: {
             Group {
                 Image(systemName: type.getImageName())
@@ -23,7 +23,7 @@ struct SmallRectangleView: View {
             }
             .frame(width: 80, height: 80, alignment: .center)
             .background(.black.opacity(0.8))
-            .cornerRadius(13)
+            .cornerRadius(17)
         })
     }
     
