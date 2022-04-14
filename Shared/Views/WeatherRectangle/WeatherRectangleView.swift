@@ -19,7 +19,7 @@ struct WeatherRectangleView: View {
         }, label: {
             VStack(spacing: 5) {
                 Spacer()
-                    .frame(height: 25)
+                    .frame(height: 20)
                 Text("\(weather.main.temp.roundedToZero)º")
                     .foregroundColor(.white)
                     .font(.system(size: 40, weight: .black))
@@ -29,6 +29,8 @@ struct WeatherRectangleView: View {
                     Text("\(weather.weather.first?.description ?? "")")
                         .foregroundColor(.white)
                         .font(.system(size: 14, weight: .black))
+                    
+                        
                 }
                 Text("Umidade: \(weather.main.humidity.roundedToZero)%")
                     .foregroundColor(.white)

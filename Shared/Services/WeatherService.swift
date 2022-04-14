@@ -9,13 +9,12 @@ import Foundation
 import Alamofire
 
 class WeatherService {
-    let apiKey = "28fc527cf9fff9ba15e201ec020976f1"
     
     let apiURL = "https://api.openweathermap.org/data/2.5/weather"
     
     
     lazy var urlWithCoordinate: String = {
-        "\(apiURL)?lat=\(locationManager.latitude)&lon=\(locationManager.longitude)&lang=pt_br&appid=\(apiKey)&units=metric"
+        "\(apiURL)?lat=\(locationManager.latitude)&lon=\(locationManager.longitude)&lang=pt_br&appid=\(weatherApiKey)&units=metric"
     }()
 
     var locationManager = CurrentLocationManager()
