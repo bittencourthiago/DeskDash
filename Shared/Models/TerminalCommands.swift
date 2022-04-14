@@ -22,9 +22,9 @@ enum TerminalCommands: String {
             case .xcode:
                 return "hammer.fill"
             case .brave:
-                return "globe"
+                return "brave"
             case .discord:
-                return "message.fill"
+                return "discord"
             case .terminal:
                 return "terminal"
             case .copy:
