@@ -9,28 +9,31 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        HStack(spacing: 30) {
-            VStack(spacing: 5) {
-                SmallRectangleView(type: .xcode)
-                SmallRectangleView(type: .brave)
-                SmallRectangleView(type: .discord)
-                SmallRectangleView(type: .terminal)
-            }
-            VStack {
-                WeatherRectangleView()
-                UsageRectangleView(type: .memory)
-            }
-            VStack {
-                UsageRectangleView(type: .cpu)
-                UsageRectangleView(type: .memory)
-            }
-            VStack {
-                SmallRectangleView(type: .copy)
-                SmallRectangleView(type: .light)
-                SmallRectangleView(type: .mail)
-                SmallRectangleView(type: .notes)
-            }
-        }
+		ZStack {
+			BackgroundView()
+			HStack(spacing: 30) {
+				VStack(spacing: 5) {
+					SmallRectangleView(type: .xcode)
+					SmallRectangleView(type: .brave)
+					SmallRectangleView(type: .discord)
+					SmallRectangleView(type: .terminal)
+				}
+				VStack {
+					WeatherRectangleView()
+					UsageRectangleView(type: .memory)
+				}
+				VStack {
+					UsageRectangleView(type: .cpu)
+					UsageRectangleView(type: .memory)
+				}
+				VStack {
+					SmallRectangleView(type: .copy)
+					SmallRectangleView(type: .light)
+					SmallRectangleView(type: .mail)
+					SmallRectangleView(type: .notes)
+				}
+			}
+		}
     }
 }
 
