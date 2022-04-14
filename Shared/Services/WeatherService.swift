@@ -16,7 +16,7 @@ class WeatherService {
     lazy var urlWithCoordinate: String = {
         "\(apiURL)?lat=\(locationManager.latitude)&lon=\(locationManager.longitude)&lang=pt_br&appid=\(weatherApiKey)&units=metric"
     }()
-
+	
     var locationManager = CurrentLocationManager()
 
     func getWeatherStart(completion: @escaping((Result<WeatherReceiver, AFError>) -> Void)) {
