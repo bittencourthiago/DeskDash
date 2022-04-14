@@ -10,13 +10,16 @@ import Alamofire
 
 class WeatherService {
 
+	
+	
+	
     let apiURL = "https://api.openweathermap.org/data/2.5/weather"
 
 	// swiftlint:disable all
     lazy var urlWithCoordinate: String = {
         "\(apiURL)?lat=\(locationManager.latitude)&lon=\(locationManager.longitude)&lang=pt_br&appid=\(weatherApiKey)&units=metric"
     }()
-
+	
     var locationManager = CurrentLocationManager()
 
     func getWeatherStart(completion: @escaping((Result<WeatherReceiver, AFError>) -> Void)) {
