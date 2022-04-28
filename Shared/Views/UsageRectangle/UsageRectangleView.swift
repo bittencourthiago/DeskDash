@@ -19,7 +19,7 @@ struct UsageRectangleView: View {
 
         }, label: {
             ZStack {
-                Color.black.opacity(0.8)
+                Color.black.opacity(0.7)
                 VStack {
                     Spacer()
                     Color.blue
