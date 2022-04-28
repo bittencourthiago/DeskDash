@@ -42,7 +42,7 @@ struct WeatherRectangleView: View {
 
             }
             .frame(width: 170, height: 170, alignment: .center)
-            .background(.black.opacity(0.8))
+            .background(.black.opacity(0.7))
             .cornerRadius(17)
         })
             .onAppear {
